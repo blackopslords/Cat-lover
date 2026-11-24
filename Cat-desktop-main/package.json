@@ -1,0 +1,24 @@
+{
+  "name": "bracel",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Bracel, a cat that lives on the edges of the websites you visit (browser extension)",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "node scripts/lint.mjs",
+    "test": "npm run lint && playwright test",
+    "test:live": "LIVE=1 playwright test test/live.spec.js",
+    "build": "node scripts/build.mjs",
+    "build:test": "node scripts/build.mjs --test",
+    "icons": "node scripts/icons.mjs",
+    "serve": "node scripts/serve.mjs",
+    "site": "node scripts/site.mjs",
+    "video": "node scripts/video.mjs",
+    "gif": "node scripts/gif.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "gifenc": "1.0.3"
+  }
+}
